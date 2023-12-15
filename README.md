@@ -16,3 +16,11 @@ generate the model is Test_SUN_dataset.py which used a VGG19 pre-trained model i
 point for training. The Python file cont_training.py was used to perform further fitting on the model, this was 
 primarily implemented due to hardware constraints as the model would fail to train if too many epochs were used
 at once. Finally, the sun397_model was evaluated for general accuracy using the Python file test.py.
+
+__The following contains links to my Google Drive containing the sun397_model and the sample data set
+the sun397_model is 84.1 MB and the sample dataset is 204 MB. So, room in memory will be needed for 
+downloading and execution of the model's evaluation__
+
+Model Download:
+Sample Dataset Download: 
+
