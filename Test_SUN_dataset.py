@@ -22,7 +22,7 @@ external_drive_path = 'D:\\' #Loads model and sun397 into my external drive sinc
     data_dir=external_drive_path
 )
 
-#Alteres the images in teh splits so that they all have the same input shape
+#Alters the images in the splits so that they all have the same input shape
 ds_train = ds_train.map(preprocess_data) 
 ds_validation = ds_validation.map(preprocess_data)
 ds_test = ds_test.map(preprocess_data)
@@ -38,7 +38,7 @@ for layer in base_model.layers:
     layer.trainable = False
 
 
-#Creation of Model. Used Conv2D since internet recommended that I use it for 2D image classification
+#Creation of Model. Used Conv2D since the internet recommended that I use it for 2D image classification
 model = models.Sequential()
 model.add(base_model)
 model.add(layers.Conv2D(64, (3, 3), activation='relu'))
@@ -47,7 +47,7 @@ model.add(layers.Dropout(0.01))
 model.add(layers.Flatten())
 model.add(layers.Dense(512, activation='relu'))
 model.add(layers.Dense(397, activation='softmax')) 
-#Used softmax at recommendation from device and internet since this is a multi clasification problem
+#Used softmax at recommendation from device and internet since this is a multi-classification problem
 
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
