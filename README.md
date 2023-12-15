@@ -1,8 +1,7 @@
 # CS5600_Project2_TomP
 Tom Prouty's GitHub Repository for the Final Project of CS5600
 
-__IMPORTANT: Do not run any of the files. I attached a video of me running the evaluation program (as this was
-the next best thing I could think of). Running the files yourself will cause the system to try and download
+__IMPORTANT: Do not run the Python files containing tfds. Running the files yourself will cause the system to try and download
 the SUN397 dataset onto your computer, which is only possible if you have an available 36 GB minimum of space in memory.__
 
 The goal of this project was to create a multi-category image classification ConvNet. To do this the TensorFlow
