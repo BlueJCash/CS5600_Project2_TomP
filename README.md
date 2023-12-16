@@ -16,8 +16,8 @@ primarily implemented due to hardware constraints as training the model failed i
 at once. Finally, the sun397_model was evaluated for general accuracy using the Python file test.py.
 
 To evaluate the model please make sure that test.py and sun397_model are in the same directory. Also,
-change the path in test.py to be wherever the sample dataset was downloaded. If there are any
-issues please contact me and I will try to respond as soon as possible.
+change the path in test.py to be wherever the sample dataset was downloaded, then run test.py. If 
+there are any issues please contact me and I will try to respond as soon as possible.
 
 __The following contains links to my Google Drive containing the sun397_model and the sample data set
 the sun397_model is 84.1 MB and the sample dataset is 204 MB. So, room in memory will be needed for 
