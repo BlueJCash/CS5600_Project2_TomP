@@ -23,9 +23,9 @@ __The following contains links to my Google Drive containing the sun397_model an
 the sun397_model is 84.1 MB and the sample dataset is 204 MB. So, room in memory will be needed for 
 downloading and executing the model's evaluation.__
 
-Model Download (84MB): https://drive.google.com/drive/folders/1boRyJEK9iOAfS7GTsODbyy8lnCw4HhiR?usp=sharing
+Model Download (84.1 MB): https://drive.google.com/drive/folders/1boRyJEK9iOAfS7GTsODbyy8lnCw4HhiR?usp=sharing
 
-Sample Dataset Download (204MB): https://drive.google.com/drive/folders/18NLE57fyTKxhaB9iAGoMg6egxe5zHA4g?usp=sharing
+Sample Dataset Download (204 MB): https://drive.google.com/drive/folders/18NLE57fyTKxhaB9iAGoMg6egxe5zHA4g?usp=sharing
 
-
+Video of Me Running the Test.py File (54.4 MB): https://drive.google.com/file/d/1i9_wnNFfCmCsCn9rduRu_O6XBhnXe18v/view?usp=sharing
 
