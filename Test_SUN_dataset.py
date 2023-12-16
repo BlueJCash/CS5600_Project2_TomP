@@ -12,10 +12,11 @@ def preprocess_data(sample): #Preprocces function due to fact that not all image
 
 external_drive_path = 'D:\\' #Loads model and sun397 into my external drive since sun397 is 36 GB
 
-(ds_train, ds_validation, ds_test), ds_info = tfds.load( 
+#Splits the loaded dataset into subsets that can be used
+(ds_train, ds_validation, ds_test), ds_info = tfds.load(  
     #Used to load and split sun397 into training, validation, and testing sections
     name='sun397',
-    split=['train', 'validation', 'test'],
+    split=['train', 'validation', 'test'], 
     shuffle_files=True,
     with_info=True,
     as_supervised=False,
@@ -32,7 +33,7 @@ ds_train = ds_train.batch(batch_size)
 ds_validation = ds_validation.batch(batch_size)
 ds_test = ds_test.batch(batch_size)
 
-base_model = VGG19(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+base_model = VGG19(weights='imagenet', include_top=False, input_shape=(224, 224, 3)) #Import of VGG19 to reduce training time and increase accuracy.
 
 for layer in base_model.layers:
     layer.trainable = False
@@ -43,7 +44,7 @@ model = models.Sequential()
 model.add(base_model)
 model.add(layers.Conv2D(64, (3, 3), activation='relu'))
 model.add(layers.MaxPooling2D((2, 2)))
-model.add(layers.Dropout(0.01))
+model.add(layers.Dropout(0.01)) #Dropout layer to reduce overfitting
 model.add(layers.Flatten())
 model.add(layers.Dense(512, activation='relu'))
 model.add(layers.Dense(397, activation='softmax')) 
