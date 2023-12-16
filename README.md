@@ -15,11 +15,12 @@ point for training. The Python file cont_training.py was used to perform further
 primarily implemented due to hardware constraints as training the model failed if too many epochs were used
 at once. Finally, the sun397_model was evaluated for general accuracy using the Python file test.py.
 
-To evaluate the model please make sure that the model is in the same directory of the image 
+To evaluate the model please make sure that the model is in the same directory as the sample dataset. 
+Also, change the path in test.py to the path of the directory you are using to store the model and sample data.
 
 __The following contains links to my Google Drive containing the sun397_model and the sample data set
 the sun397_model is 84.1 MB and the sample dataset is 204 MB. So, room in memory will be needed for 
-downloading and execution of the model's evaluation.__
+downloading and executing the model's evaluation.__
 
 Model Download (84MB): https://drive.google.com/drive/folders/1boRyJEK9iOAfS7GTsODbyy8lnCw4HhiR?usp=sharing
 
